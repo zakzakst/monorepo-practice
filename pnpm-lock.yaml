@@ -207,7 +207,11 @@ importers:
 
   .: {}
 
-  apps/my-app: {}
+  apps/my-app:
+    dependencies:
+      my-lib:
+        specifier: workspace:*
+        version: link:../../packages/my-lib
 
   packages/my-lib:
     devDependencies:

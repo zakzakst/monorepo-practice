@@ -1,3 +1,3 @@
 export const hello = () => {
-  return "Hello from my-lib!";
+  return "Hello!! Ver2";
 }
