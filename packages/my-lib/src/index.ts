@@ -1,3 +1,1 @@
-export const hello = () => {
-  return "Hello!! Ver2";
-}
+export { Button } from "./Button";
