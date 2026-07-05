@@ -209,6 +209,9 @@ importers:
 
   apps/my-app:
     dependencies:
+      my-lib:
+        specifier: workspace:*
+        version: link:../../packages/my-lib
       next:
         specifier: 16.2.10
         version: 16.2.10(@babel/core@7.29.7)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
@@ -248,7 +251,7 @@ importers:
     dependencies:
       my-lib:
         specifier: workspace:*
-        version: link:../../packages/my-lib-old
+        version: link:../../packages/my-lib
 
   packages/my-lib:
     dependencies:
